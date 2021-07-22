@@ -32,21 +32,17 @@ test('Can get localization data from xlsx file', async () => {
 });
 
 test('Fails when first sheet is missing', async () => {
-  try
-  {
+  try {
     await compiler('loc_All objects_bad.xlsx');
-    fail("compiler should fail");
-  }
-  catch(error)
-  {
-    if(Array.isArray(error)) { 
+    fail('compiler should fail');
+  } catch (error) {
+    if (Array.isArray(error)) {
       const errors = error as webpack.StatsError[];
       expect(errors[0]).toBeDefined();
       const match = errors[0].message.match(/Error:.*$/gm);
       expect(match?.[0]).toMatchSnapshot();
-    }
-    else {
-      fail("Expected an array of webpack errors.")
+    } else {
+      fail('Expected an array of webpack errors.');
     }
   }
 });
