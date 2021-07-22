@@ -1,0 +1,8 @@
+{
+  "name": "articy-xlsx-loader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/scenarioworld/articy-xlsx-loader.git",
+  "author": "Brook Jensen <brook@scenarioworld.ca>",
+  "license": "MIT"
+}
