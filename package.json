@@ -1,6 +1,12 @@
 {
   "version": "0.2.0",
   "license": "MIT",
+  "homepage": "https://github.com/scenarioworld/articy-xlsx-loader",
+  "bugs": "https://github.com/scenarioworld/articy-xlsx-loader/issues",
+  "repository": {
+    "url": "https://github.com/scenarioworld/articy-xlsx-loader",
+    "type": "git"
+  },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
