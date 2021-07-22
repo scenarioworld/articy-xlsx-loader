@@ -1,0 +1,61 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "articy-xlsx-loader",
+  "author": "Brook Warner Jensen <brook@scenarioworld.ca>",
+  "description": "Processes xlsx localization files from Articy into JSON objects mapping LocIDs to string values.",
+  "module": "dist/articy-xlsx-loader.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/articy-xlsx-loader.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/articy-xlsx-loader.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^5.0.1",
+    "@types/webpack": "^5.28.0",
+    "husky": "^7.0.1",
+    "memfs": "^3.2.2",
+    "size-limit": "^5.0.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5",
+    "webpack": "^5.46.0"
+  },
+  "dependencies": {
+    "exceljs": "^4.2.1"
+  }
+}

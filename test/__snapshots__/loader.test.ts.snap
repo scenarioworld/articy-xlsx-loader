@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fails when first sheet is missing 1`] = `
+Array [
+  Object {
+    "details": undefined,
+    "message": "Module build failed (from ../src/index.ts):
+Error: Could not worksheet named 'ArticyStrings'. This is not a valid Articy Localization XLSX.
+    at H:\\\\Project\\\\articy-xlsx-loader\\\\src\\\\index.ts:20:11",
+    "moduleId": 613,
+    "moduleIdentifier": "H:\\\\Project\\\\articy-xlsx-loader\\\\src\\\\index.ts??ruleSet[1].rules[0].use!H:\\\\Project\\\\articy-xlsx-loader\\\\test\\\\loc_All objects_bad.xlsx",
+    "moduleName": "./loc_All objects_bad.xlsx",
+    "moduleTrace": Array [],
+    "stack": "ModuleBuildError: Module build failed (from ../src/index.ts):
+Error: Could not worksheet named 'ArticyStrings'. This is not a valid Articy Localization XLSX.
+    at H:\\\\Project\\\\articy-xlsx-loader\\\\src\\\\index.ts:20:11
+    at processResult (H:\\\\Project\\\\articy-xlsx-loader\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:703:19)
+    at H:\\\\Project\\\\articy-xlsx-loader\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:809:5
+    at H:\\\\Project\\\\articy-xlsx-loader\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:399:11
+    at H:\\\\Project\\\\articy-xlsx-loader\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:251:18
+    at context.callback (H:\\\\Project\\\\articy-xlsx-loader\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:124:13)
+    at H:\\\\Project\\\\articy-xlsx-loader\\\\src\\\\index.ts:19:16",
+  },
+]
+`;
